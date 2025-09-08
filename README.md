@@ -1,12 +1,14 @@
 # Bokeh 多Y轴独立交互工具
 
 ![Bokeh](https://static.bokeh.org/logos/logotype.svg)
-![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)  
 ![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg)
 
 ## ✨ 项目特色
 
-本项目解决了Bokeh在使用多个Y轴时的一个关键限制：**当拖动一个Y轴时所有数据会同步移动**。通过我们的改进，现在每个Y轴都可以独立拖动和缩放，极大提升了多变量数据可视化的交互体验。
+本项目解决了Bokeh在使用多个Y轴时，无法对单一的y轴的进行拖动的限制  
+受到WheelZoomtogrther启发，既然能够对任一的坐标轴进行缩放，应该可以**对任一y轴进行单独的拖动**，但对于bokeh并没有相对应的功能。  
+在bokeh中**拖动一个Y轴时所有数据会同步移动**。通过我们的改进，现在每个**Y轴都可以独立拖动和缩放**，极大提升了多变量数据可视化的交互体验。
 
 ## 🚀 核心功能
 
@@ -45,6 +47,7 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 2. 大数据集可能造成卡顿
 3. 多Y轴情况下注意量纲差异对可视化效果的影响
 4. 如遇交互问题，请检查浏览器控制台错误信息
+
 
 
 
