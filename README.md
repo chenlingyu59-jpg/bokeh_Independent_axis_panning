@@ -1,4 +1,4 @@
-# Bokeh 多Y轴独立交互工具
+# Bokeh 多Y轴独立交互
 
 ![Bokeh](https://static.bokeh.org/logos/logotype.svg)
 ![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)  
@@ -42,6 +42,7 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
 # 指导教师 *Bookaa*
+
 
 
 
