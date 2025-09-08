@@ -18,7 +18,7 @@ bokeh >= 3.7.3
 - **点击图例隐藏曲线** - 每条数据线独立显示隐藏
 - **滚轮缩放对应坐标轴** - 每条数据线独立缩放
 
-# 打开样例example.html了解功能 !(example.html)
+# 打开样例example.html了解功能
 
 ## 对于其他版本的bokeh需要修改以下代码
 ```python
@@ -49,6 +49,7 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
 ## 指导教师 *Bookaa*
+
 
 
 
