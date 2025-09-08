@@ -4,11 +4,9 @@
 ![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)
 ![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg)
 
-## 🎥 演示视频
+## 🎥 演示动画
+![功能演示](example.gif)
 
-[![Bokeh多Y轴独立交互演示](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtube.com/VIDEO_ID)
-
-*点击上方图片观看演示视频*
 
 ## ✨ 项目特色
 
@@ -50,7 +48,6 @@ LinearAxisLt中修改
 - **智能轴对齐** - 自动优化多Y轴的布局和间距
 - **响应式设计** - 适应不同屏幕尺寸和设备
 - **主题支持** - 兼容Bokeh所有内置主题
-- **导出功能** - 支持PNG、SVG等多种导出格式
 
 ## ⚠️ 注意事项
 
@@ -72,5 +69,6 @@ LinearAxisLt中修改
 
 **享受更加灵活的数据可视化体验！** 🎉
 
-*如有问题或建议，请提交[Issue](https://github.com/your-repo/issues)或通过Email联系我们*
+*如有问题或建议，请提交[Issue]或通过Email联系我们*
+
 
