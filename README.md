@@ -11,6 +11,5 @@ y1_name = ['yourrigthaxis']	# 左边放一个
 y2_name = ['extra_axis','extra_axis']  
 4.由于版本问题造成的js定位不准确请修改js_content.py文件  
 5.使用样例  
-<vedio width="320" height="240" controls>
-<source scr = "example.mp4" type = "vedio/mp4">
-</vedio>
+<video src="example.mp4" width="640" controls>
+</video>
