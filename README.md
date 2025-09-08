@@ -8,7 +8,7 @@ bokeh >= 3.7.3
 ```
 # ✨ 项目特色
 
-本项目解决了Bokeh在使用多个Y轴时，Bokeh无法支持仅对单个Y轴进行拖动。  
+**本项目解决了Bokeh在使用多个Y轴时，Bokeh无法支持仅对单个Y轴进行拖动**  
 受到WheelZoomTool(zoom_together="none")启发，既然能够对任一Y轴进行缩放，应该可以对任一Y轴进行单独的拖动，但在bokeh中并没有相对应的功能。在bokeh中拖动一个Y轴时所有数据会同步移动。通过我们的改进，现在每个Y轴都可以独立拖动和缩放，极大提升了多变量数据可视化的交互体验。
 
 # 🚀 核心功能
@@ -42,6 +42,7 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
 # 指导教师 *Bookaa*
+
 
 
 
