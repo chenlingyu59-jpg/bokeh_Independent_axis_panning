@@ -65,12 +65,12 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 
 - **智能轴对齐** - 自动优化多Y轴的布局和间距
 - **响应式设计** - 适应不同屏幕尺寸和设备
-- **主题支持** - 兼容Bokeh所有内置主题
+- **主题支持** - 兼容Bokeh所用tools工具
 
 ## ⚠️ 注意事项
 
 1. 确保Bokeh版本 ≥ 3.7.3
-2. 大数据集建议启用WebGL加速
+2. 大数据集可能造成卡顿
 3. 多Y轴情况下注意量纲差异对可视化效果的影响
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
@@ -88,6 +88,7 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 **享受更加灵活的数据可视化体验！** 🎉
 
 *如有问题或建议，请提交[Issue]或通过Email联系我们*
+
 
 
 
