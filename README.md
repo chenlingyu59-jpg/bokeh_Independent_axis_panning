@@ -29,6 +29,13 @@ file_path = r'your_data_source.csv'  # 您的数据文件路径
 y1_name = ['primary_metric']        # 左侧Y轴数据列
 y2_name = ['extra_metric_1', 'extra_metric_2']  # 右侧额外Y轴数据列
 ```
+### 环境配置
+```bash
+conda create --name bokeh python=3.13.5
+conda activate bokeh
+conda install -r requirements.txt
+```
+详细的包依赖请参考requirement.txt
 
 ## 🔧 技术实现
 
@@ -70,5 +77,6 @@ LinearAxisLt中修改
 **享受更加灵活的数据可视化体验！** 🎉
 
 *如有问题或建议，请提交[Issue]或通过Email联系我们*
+
 
 
