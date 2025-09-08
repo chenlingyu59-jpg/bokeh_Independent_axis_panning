@@ -47,7 +47,16 @@ conda install -r requirements.txt
 
 ```python
 # 如果遇到JS定位问题，请修改js_content.py中的
-LinearAxisLt中修改
+LinearAxisLt = document.querySelectorAll("div.bk-Column")[0]
+        .shadowRoot.querySelectorAll("div.bk-Figure")[0]
+        .shadowRoot.querySelectorAll("div.bk-Canvas")[0]
+        .shadowRoot.querySelectorAll("div.bk-left")[0]
+        .shadowRoot.querySelectorAll("div.bk-LinearAxis");
+LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
+        .shadowRoot.querySelectorAll("div.bk-Figure")[0]
+        .shadowRoot.querySelectorAll("div.bk-Canvas")[0]
+        .shadowRoot.querySelectorAll("div.bk-right")[0]
+        .shadowRoot.querySelectorAll("div.bk-LinearAxis");
 ```
 
 ## 🌟 高级特性
@@ -77,6 +86,7 @@ LinearAxisLt中修改
 **享受更加灵活的数据可视化体验！** 🎉
 
 *如有问题或建议，请提交[Issue]或通过Email联系我们*
+
 
 
 
