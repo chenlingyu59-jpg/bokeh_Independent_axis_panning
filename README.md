@@ -49,6 +49,9 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 3. 多Y轴情况下注意量纲差异对可视化效果的影响
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
+## 指导教师 *Bookaa*
+
+
 
 
 
