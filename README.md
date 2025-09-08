@@ -3,7 +3,9 @@
 ![Bokeh](https://static.bokeh.org/logos/logotype.svg)
 ![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)  
 ![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg)
-
+```bash
+bokeh >= 3.7.3
+```
 ## ✨ 项目特色
 
 本项目解决了Bokeh在使用多个Y轴时，无法对单一的y轴的进行拖动的限制  
@@ -47,6 +49,7 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 2. 大数据集可能造成卡顿
 3. 多Y轴情况下注意量纲差异对可视化效果的影响
 4. 如遇交互问题，请检查浏览器控制台错误信息
+
 
 
 
