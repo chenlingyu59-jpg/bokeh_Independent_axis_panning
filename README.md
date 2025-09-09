@@ -4,12 +4,13 @@
 ![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)  
 ![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg)
 ```bash
+version
 bokeh >= 3.7.3
 ```
 # ✨ 项目特色
 
 **本项目解决了Bokeh在使用多个Y轴时，Bokeh无法支持仅对单个Y轴进行拖动**  
-受到WheelZoomTool(zoom_together="none")启发，既然能够对任一Y轴进行缩放，应该可以对任一Y轴进行单独的拖动，但在bokeh中并没有相对应的功能。在bokeh中拖动一个Y轴时所有数据会同步移动。通过我们的改进，现在每个Y轴都可以独立拖动和缩放，极大提升了多变量数据可视化的交互体验。
+在bokeh的WheelZoomTool中有一个参数zoom_together，该参数设置为'none'时，每一个y轴数据都可以使用滚轮独立缩放。但当我们拖动数据时所有数据都和同步移动，在PanTool中没有一个参数pan_togrther来控制每一条y轴的独立拖动。本项目的实现方法如下，先通过bokeh的pyhon代码生成对应的网页代码，根据bokeh文档我们能够很快的得到鼠标pan的移动距cb_obj.delta_y由这一数据就能够生成新的y轴范围，实现独立拖动。同时为了自适应y轴宽度，我们在网页抓取了每一个y轴宽度来更新我们的pan判定范围，以上两点结合实现了对任意y轴进行的独立拖动。
 
 # 🚀 核心功能
 
@@ -19,21 +20,12 @@ bokeh >= 3.7.3
 - **滚轮缩放对应坐标轴** - 每条数据线独立缩放
 
 # 打开样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)了解功能
+- **使用pan工具**-在pan工具激活的情况下我们能够直接对图形进行拖动，此时所有的数据同步更新
+- **使用pan（x-axis）工具**-在此工具激活的情况下只能够对x轴进行全局拖动，将鼠标移动至对应的y轴进行拖动能够实现每一个y轴的独立拖动
+- **独立拖动y轴**-取消pan工具的选中将鼠标移动至对应的y轴区域能偶独立拖动y轴
+- **独立缩放y轴**-点击工具栏的wheelzoom，将鼠标移至对应的y轴使用滚轮进行独立缩放
+- **刷新**-点击工具栏刷新按钮实现图形恢复初始状态
 
-# 对于其他版本的bokeh需要修改以下代码
-```python
-# 如果遇到JS定位问题，请修改js_content.py中的
-LinearAxisLt = document.querySelectorAll("div.bk-Column")[0]
-        .shadowRoot.querySelectorAll("div.bk-Figure")[0]
-        .shadowRoot.querySelectorAll("div.bk-Canvas")[0]
-        .shadowRoot.querySelectorAll("div.bk-left")[0]
-        .shadowRoot.querySelectorAll("div.bk-LinearAxis");
-LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
-        .shadowRoot.querySelectorAll("div.bk-Figure")[0]
-        .shadowRoot.querySelectorAll("div.bk-Canvas")[0]
-        .shadowRoot.querySelectorAll("div.bk-right")[0]
-        .shadowRoot.querySelectorAll("div.bk-LinearAxis");
-```
 # ⚠️ 注意事项
 
 1. 确保Bokeh版本 ≥ 3.7.3
@@ -41,7 +33,8 @@ LinearAxisRt = document.querySelectorAll("div.bk-Column")[0]
 3. 多Y轴情况下注意量纲差异对可视化效果的影响
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
-# 指导教师 *Bookaa*
+指导教师 bookaa
+
 
 
 
