@@ -16,9 +16,10 @@ bokeh >= 3.7.3
 
 # 打开样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)了解功能
 
-- 点击example跳转至图像，将鼠标移动至任意y轴区域内进行拖动，对应的y轴图像跟随移动，其余不动，使用滚轮时，相应y轴图像缩放其余不动
+- 点击example跳转至图像，将鼠标移动至任意y轴区域内进行拖动，对应的y轴图像跟随移动，使用滚轮时，相应y轴图像缩放
 
 指导教师 bookaa
+
 
 
 
