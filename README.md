@@ -19,7 +19,7 @@ bokeh >= 3.7.3
 - **点击图例隐藏曲线** - 每条数据线独立显示隐藏
 - **滚轮缩放对应坐标轴** - 每条数据线独立缩放
 
-# 打开样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)了解功能
+# 打开样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example1.html)了解功能
 - **使用pan工具**-在pan工具激活的情况下我们能够直接对图形进行拖动，此时所有的数据同步更新
 - **使用pan（x-axis）工具**-在此工具激活的情况下只能够对x轴进行全局拖动，将鼠标移动至对应的y轴进行拖动能够实现每一个y轴的独立拖动
 - **独立拖动y轴**-取消pan工具的选中将鼠标移动至对应的y轴区域能偶独立拖动y轴
@@ -34,6 +34,7 @@ bokeh >= 3.7.3
 4. 如遇交互问题，请检查浏览器控制台错误信息
 
 指导教师 bookaa
+
 
 
 
