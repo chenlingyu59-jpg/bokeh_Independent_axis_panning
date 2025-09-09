@@ -4,7 +4,7 @@
 ![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg) 
 ```bash
 version
-bokeh >= 3.7.3
+bokeh = 3.7.3
 ```
 # 项目特色  
 **本项目解决了Bokeh在使用多个Y轴时，无法支持仅对单个Y轴进行拖动**  
@@ -12,11 +12,12 @@ bokeh >= 3.7.3
    
 运行main.py后会在输出example.html.   
    
-点击样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)了解功能  
+点击进入在线样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)了解功能  
    
-打开样例将鼠标移动至任意y轴区域内进行拖动，对应的y轴图像跟随移动。  
+打开html将鼠标移动至任意y轴区域内进行拖动，对应的y轴图像跟随移动。  
 
 指导教师 bookaa
+
 
 
 
