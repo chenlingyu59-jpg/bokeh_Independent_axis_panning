@@ -13,12 +13,14 @@ bokeh >= 3.7.3
 在bokeh的WheelZoomTool中有一个参数zoom_together，该参数设置为'none'时，每一个y轴数据都可以使用滚轮独立缩放。而在bokeh的PanTool中没有一个参数pan_togrther来控制每一条y轴的独立拖动。本项目支持了所有y轴的独立拖动。
 # 功能
 - **独立Y轴交互** - 每个Y轴可单独拖动和缩放，互不影响
+- 运行程序后会在浏览器中显示example.html
 
 # 打开样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)了解功能
 
 - 点击example跳转至图像，将鼠标移动至任意y轴区域内进行拖动，对应的y轴图像跟随移动，使用滚轮时，对应y轴图像缩放
 
 指导教师 bookaa
+
 
 
 
