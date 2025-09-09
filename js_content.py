@@ -5,7 +5,6 @@ jscode = """
 // Find all elements with class name 'bk-LinearAxis'
 // Get LinearAxis elements
 // Use a flag to ensure execution only once
-// Get LinearAxis elements
 
 if (cb_obj.event_name === 'panstart') 
 {
@@ -24,7 +23,6 @@ if (cb_obj.event_name === 'panstart')
         .shadowRoot.querySelectorAll("div.bk-Canvas")[0]
         .shadowRoot.querySelectorAll("div.bk-left")[0]
         .shadowRoot.querySelectorAll("div.bk-LinearAxis");
-
     //console.log(LinearAxislt)
     LinearAxisLt.forEach((axis, index) => 
     {
@@ -66,10 +64,8 @@ if (cb_obj.event_name === 'panstart')
     window.rtend.reverse()
     // Initialize result array
     window.rightAxisPositions = [];
-
     // Start accumulating offset from the right side
     let currentEnd = p.width;
-
     // Iterate through each right axis width (starting from the rightmost side)
     for (let i = 0; i < window.rtend.length; i++) {
         const axisWidth = window.rtend[i];
@@ -89,10 +85,9 @@ if (cb_obj.event_name === 'panstart')
 
 const sx = cb_obj.sx;
 const delta_y = cb_obj.delta_y;
-
 let range_size, delt;
 
-// pan left axis
+// pan left 
 if (sx >= 0 && sx < window.ltend) {
     range_size = window.initialRanges.y1.end - window.initialRanges.y1.start;
     delt = delta_y / p.inner_height * range_size;
@@ -100,8 +95,7 @@ if (sx >= 0 && sx < window.ltend) {
     p.y_range.end = window.initialRanges.y1.end + delt;
 }
 
-// pan right axis
-
+// pan right
 const right_axes = Object.keys(axisNames);
 for (let i = 0; i < right_axes.length; i++){
     const start_x = window.rightAxisPositions[right_axes.length - i - 1]['start']
