@@ -1,4 +1,3 @@
-import pandas as pd
 from bokeh import events
 from bokeh.plotting import figure, show,output_file,save
 from bokeh.models import LinearAxis, Range1d, WheelZoomTool, PanTool, CustomJS, Slider
@@ -8,21 +7,6 @@ from js_content import jscode
 
 
 # -------------------------- 1. GenData --------------------------
-''' #You can load csv in this way
-file_path = r'yourdata.csv'
-df = pd.read_csv(file_path, encoding="utf-8-sig")
-y1_name = ['name1']
-y2_name = ['name2','name3']
-n1,n2 = len(y1_name),len(y2_name)
-df.columns = df.columns.str.strip()
-
-x = df.index.values
-y1 = df[y1_name[0]].values	
-y2 = []
-for name in y2_name:
-    y2.append(df[name].values)
-'''
-
 # this is a example
 x = np.linspace(0.1, 50, 1000)
 y2 = [np.sin(x),np.cos(x)]
@@ -63,7 +47,6 @@ axisnames2 = {f'y{i+2}':axis_names[i] for i in range(n2)}
 # create pan_callback listeing panning
 pan_callback = CustomJS(args=dict(
     p=p,
-    rightstart = rightstart,
     axisNames = axisnames2
 ), code=jscode)
 # Add event listeners for pan actions (start, move, and end)
@@ -83,7 +66,6 @@ p.toolbar.active_scroll = wheel_zoom  # Activate wheel zoom tool
 # -------------------------- 6. Display Chart --------------------------
 layout = column(p)
 #show(layout)
-
 # Use the following code if you want to save the chart
 output_file("example.html")
-show(layout)
+save(layout)
