@@ -1,27 +1,24 @@
-# Bokeh 多Y轴独立交互
-![Bokeh](https://static.bokeh.org/logos/logotype.svg) 
+## Language
+
+- [English](README.md)
+- [中文](README_zh.md)
+
+# Bokeh Multiple Y-Axes Independent Interaction  
+![Bokeh](https://static.bokeh.org/logos/logotype.svg)  
 ![Python](https://img.shields.io/badge/Python-3.13.5-blue.svg)  
-![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg) 
+![Bokeh](https://img.shields.io/badge/Bokeh-3.7.3-orange.svg)  
 ```bash
-version
-bokeh = 3.7.3
+version  
+bokeh = 3.7.3  
 ```
-# 项目特色  
-**本项目解决了Bokeh在使用多个Y轴时，无法支持仅对单个Y轴进行拖动**  
-在bokeh中设置参数zoom_together = none时，每一个y轴数据都可以使用滚轮独立缩放。但是，没有一个类似的参数pan_together来控制每一条y轴的独立拖动。本项目支持了所有y轴的独立拖动。  
-   
-运行main.py后会输出example.html.   
-   
-在线样例[example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)  
-   
-打开example.html将鼠标移动至任意y轴区域内进行拖动，对应的y轴图像跟随移动。  
+# Project Highlights  
+**This project addresses the issue in Bokeh where dragging cannot be performed independently for a single Y-axis when using multiple Y-axes.**  
+In Bokeh, when the parameter `zoom_together = none` is set, each Y-axis data can be independently zoomed using the scroll wheel. However, there is no similar parameter like `pan_together` to control independent dragging for each Y-axis. This project enables independent dragging for all Y-axes.  
 
-指导教师 bookaa
+Running `main.py` will generate `example.html`.  
 
+Online example: [example.html](https://chenlingyu59-jpg.github.io/bokeh_Independent_axis_panning/example.html)  
 
+Open `example.html` and drag within the area of any Y-axis to move the corresponding Y-axis plot.  
 
-
-
-
-
-
+Instructor: bookaa
