@@ -10,8 +10,8 @@ from js_content import jscode
 # this is a example
 x = np.linspace(0.1, 50, 1000)
 y2 = [np.sin(x),np.cos(x)]
+n2 = len(y2)
 y1 = np.log(x) 
-n1,n2 = len(y1),len(y2)
 colors = ["blue","red","green","orange","purple"] #add color which you like
 
 # -------------------------- 2. create figure --------------------------
@@ -65,7 +65,5 @@ p.toolbar.active_scroll = wheel_zoom  # Activate wheel zoom tool
 
 # -------------------------- 6. Display Chart --------------------------
 layout = column(p)
-#show(layout)
-# Use the following code if you want to save the chart
 output_file("example.html")
 save(layout)
